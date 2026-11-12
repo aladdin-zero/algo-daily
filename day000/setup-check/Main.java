@@ -1,11 +1,8 @@
 public class Main {
     // 1부터 n까지의 합을 구한다. (환경 점검용)
-    static int sum(int n) {
-        long total = 0;
-        for (int i = 1; i <= n; i++) {
-            total += i;
-        }
-        return total;
+    static long sum(int n) {
+    
+        return (long) n * (n + 1L) / 2;
     }
 
     public static void main(String[] args) {

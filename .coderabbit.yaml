@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=https://coderabbit.ai/integrations/schema.v2.json
+language: "ko-KR"
+reviews:
+  profile: "chill"
+  auto_review:
+    enabled: true
+    drafts: false
+  path_instructions:
+    - path: "**/*.java"
+      instructions: |
+        학습용 알고리즘 풀이 코드다. 정답 여부, 시간·공간 복잡도, 가독성(변수 이름·중복) 순으로 짧게 짚는다.
+        한국어로 쓰고, 더 나은 방법이 있으면 이유와 함께 제안한다.
+    - path: "**/*.md"
+      instructions: |
+        문서 실습 답안이다. 미션이 요구한 항목을 빠뜨렸는지만 본다. 맞춤법 지적은 하지 않는다.
